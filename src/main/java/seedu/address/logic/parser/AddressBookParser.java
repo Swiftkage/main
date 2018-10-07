@@ -29,7 +29,7 @@ public class AddressBookParser {
     /**
      * Used for initial separation of command word and args.
      */
-    //allow only alphabetic letters as commandWord
+    // allow only alphabetic letters as commandWord
     private static final Pattern BASIC_COMMAND_FORMAT = Pattern.compile("(?<commandWord>[a-zA-Z]+)(?<arguments>.*)");
 
     /**

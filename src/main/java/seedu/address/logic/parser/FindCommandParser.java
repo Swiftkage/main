@@ -33,10 +33,10 @@ public class FindCommandParser implements Parser<FindCommand> {
         }
 
         String[] nameKeywords = trimmedArgs.split("\\s+");
-        logger.info((Arrays.toString(nameKeywords)));
         List<String> listKeywords = new LinkedList<>(Arrays.asList(nameKeywords));
 
-        if (listKeywords.get(0).equals("-n")) { //different operations depending on FIELD
+        // different operations depending on FIELD
+        if (listKeywords.get(0).equals("-n")) { // search by name
             listKeywords.remove(0);
             return new FindCommand(new NameContainsKeywordsPredicate(listKeywords));
         } else {

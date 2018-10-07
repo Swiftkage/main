@@ -27,7 +27,7 @@ import static seedu.address.testutil.TypicalPersons.BOB;
 import static seedu.address.testutil.TypicalPersons.CARL;
 import static seedu.address.testutil.TypicalPersons.HOON;
 import static seedu.address.testutil.TypicalPersons.IDA;
-import static seedu.address.testutil.TypicalPersons.KEYWORD_MATCHING_MEIER;
+import static seedu.address.testutil.TypicalPersons.NAME_KEYWORD_MATCHING_MEIER;
 
 import org.junit.Test;
 
@@ -102,7 +102,7 @@ public class AddCommandSystemTest extends AddressBookSystemTest {
         /* -------------------------- Perform add operation on the shown filtered list ------------------------------ */
 
         /* Case: filters the person list before adding -> added */
-        showPersonsWithName(KEYWORD_MATCHING_MEIER);
+        showPersonsWithName(NAME_KEYWORD_MATCHING_MEIER);
         assertCommandSuccess(IDA);
 
         /* ------------------------ Perform add operation while a person card is selected --------------------------- */
