@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 
 <AnchorPane fx:id="detailsPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-  <Label text="Finder" alignment="CENTER" styleClass="label-bright"
+  <Label text="Finder" alignment="CENTER" styleClass="label-bot"
          AnchorPane.topAnchor="5" AnchorPane.leftAnchor="5" AnchorPane.rightAnchor="5" />
 
   <GridPane hgap="10" vgap="10"
@@ -20,9 +20,12 @@
       <ColumnConstraints hgrow="NEVER" />
       <ColumnConstraints hgrow="SOMETIMES" />
     </columnConstraints>
-    <Label text="Name:" styleClass="label-bright"
-           GridPane.halignment="RIGHT" GridPane.valignment="TOP" />
-    <Label fx:id="finder" styleClass="label-bright"
-           GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP" />
+
+    <Label fx:id="finder" styleClass="text-area"
+           GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP" />
+    <Label fx:id="email" styleClass="label-bright"
+           GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP" />
+    <Label fx:id="phone" styleClass="label-bright"
+           GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP" />
   </GridPane>
 </AnchorPane>

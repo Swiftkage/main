@@ -27,21 +27,15 @@
       <RowConstraints vgrow="SOMETIMES" />
     </rowConstraints>
 
-    <ImageView fx:id="image" fitWidth="180" fitHeight="180" preserveRatio="true"
-               GridPane.rowSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+    <ImageView fx:id="image" fitWidth="280" fitHeight="280" preserveRatio="true"
+               GridPane.columnSpan="2" GridPane.rowSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
 
-    <Label text="Name:" styleClass="label-bright"
-           GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP" />
-    <Label fx:id="articleDetails" styleClass="label-bright"
-           GridPane.columnIndex="2" />
+    <Label fx:id="articleDetails" styleClass="articleName"
+           GridPane.columnIndex="2"/>
 
-    <Label text="Tags:" styleClass="label-bright" GridPane.halignment="RIGHT" GridPane.valignment="TOP"
-           GridPane.rowIndex="1" GridPane.columnIndex="1" />
-    <FlowPane fx:id="tags" alignment="CENTER_LEFT"
+    <FlowPane fx:id="tagsBig" alignment="CENTER_LEFT"
               GridPane.rowIndex="1" GridPane.columnIndex="2" />
 
-    <Label text="Description:" styleClass="label-bright" GridPane.halignment="RIGHT" GridPane.valignment="TOP"
-           GridPane.rowIndex="2" GridPane.columnIndex="1" />
     <StackPane GridPane.rowIndex="2" GridPane.columnIndex="2" >
       <TextArea fx:id="description" editable="false" styleClass="text-area" />
     </StackPane>

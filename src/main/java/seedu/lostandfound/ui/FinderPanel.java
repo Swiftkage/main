@@ -24,13 +24,23 @@ public class FinderPanel extends UiPart<Region> {
     @FXML
     private Label finder;
 
+    @FXML
+    private Label phone;
+
+    @FXML
+    private Label email;
+
     public FinderPanel() {
         super(FXML);
         registerAsAnEventHandler(this);
     }
 
     private void loadFinder(Article article) {
-        Platform.runLater(() -> finder.setText(article.getFinder().fullName));
+        Platform.runLater(() -> {
+            finder.setText(article.getFinder().fullName);
+            phone.setText("Phone: " + article.getPhone().value);
+            email.setText("Email: " + article.getEmail().value);
+        });
     }
 
     @Subscribe
