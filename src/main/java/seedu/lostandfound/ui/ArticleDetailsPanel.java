@@ -32,7 +32,7 @@ public class ArticleDetailsPanel extends UiPart<Region> {
     private Label articleDetails;
 
     @FXML
-    private FlowPane tags;
+    private FlowPane tagsBig;
 
     @FXML
     private TextArea description;
@@ -51,8 +51,8 @@ public class ArticleDetailsPanel extends UiPart<Region> {
         Platform.runLater(() -> {
             image.setImage(new Image("file:" + article.getImage()));
             articleDetails.setText(article.getName().fullName);
-            tags.getChildren().clear();
-            article.getTags().forEach(tag -> tags.getChildren().add(new Label(tag.tagName)));
+            tagsBig.getChildren().clear();
+            article.getTags().forEach(tag -> tagsBig.getChildren().add(new Label(tag.tagName)));
             description.setText(article.getDescription().value);
         });
     }

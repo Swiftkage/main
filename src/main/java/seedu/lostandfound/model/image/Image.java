@@ -22,7 +22,7 @@ import seedu.lostandfound.model.util.Sequence;
  */
 public class Image {
 
-    private static final String VALIDATION_REGEX = "(0|[1-9][0-9]*)\\.(png|svg|jpg)";
+    private static final String VALIDATION_REGEX = "(0|[1-9][0-9]*)\\.(png|svg|jpg|jpeg)";
     private static final Sequence SEQUENCE = Sequence.getInstance();
     private static final Path IMAGE_FOLDER = Paths.get("data", "images");
 

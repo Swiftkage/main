@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane fx:id="detailsPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-  <Label text="Owner" alignment="CENTER" styleClass="label-bright"
+  <Label text="Owner" alignment="CENTER" styleClass="label-bot"
          AnchorPane.topAnchor="5" AnchorPane.leftAnchor="5" AnchorPane.rightAnchor="5" />
 
   <GridPane hgap="10" vgap="10"
@@ -20,9 +20,7 @@
       <ColumnConstraints hgrow="NEVER" />
       <ColumnConstraints hgrow="SOMETIMES" />
     </columnConstraints>
-    <Label text="Name:" styleClass="label-bright"
-           GridPane.halignment="RIGHT" GridPane.valignment="TOP" />
-    <Label fx:id="owner" styleClass="label-bright"
+    <Label fx:id="owner" styleClass="text-area"
            GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP" />
   </GridPane>
 </AnchorPane>
