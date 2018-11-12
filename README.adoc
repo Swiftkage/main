@@ -1,7 +1,7 @@
 = Lost and Found
 ifdef::env-github,env-browser[:relfileprefix: docs/]
 
-https://travis-ci.com/CS2103-AY1819S1-W12-1/main[image:https://travis-ci.com/CS2103-AY1819S1-W12-1/main.svg?branch=master[Build Status]]
+https://travis-ci.org/CS2103-AY1819S1-W12-1/main[image:https://travis-ci.org/CS2103-AY1819S1-W12-1/main.svg?branch=master[Build Status]]
 https://ci.appveyor.com/project/CS2103-AY1819S1-W12-1/main/branch/master[image:https://ci.appveyor.com/api/projects/status/yvil727ad656xo0d/branch/master?svg=true[Build status]]
 https://coveralls.io/github/CS2103-AY1819S1-W12-1/main?branch=master[image:https://coveralls.io/repos/github/CS2103-AY1819S1-W12-1/main/badge.svg?branch=master[Coverage Status]]
 https://www.codacy.com/app/CS2103-AY1819S1-W12-1/main?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=CS2103-AY1819S1-W12-1/main&amp;utm_campaign=Badge_Grade[image:https://api.codacy.com/project/badge/Grade/8659d1e101a3438cb1fdcff23080c3b4[Codacy Badge]]
@@ -14,8 +14,12 @@ ifndef::env-github[]
 image::images/Ui.png[width="600"]
 endif::[]
 
-* This is a desktop lost and found application. It has a GUI but most of the user interactions happen using a CLI (Command Line Interface).
-* This application is made for lost and found administrators who are comfortable with CLI.
+Welcome to *LostBUTFound*! *LostBUTFound* is a management tool designed to help *administrators manage lost and found articles*.
+
+Managing lost and found articles can be a frustrating experience, especially when there are a huge amount of articles to keep track of. LostBUTFound streamlines this management process and help you to increase your productivity.
+
+More importantly, LostBUTFound is optimized for those who prefer to work with a Command Line Interface (CLI), while still having the benefits of a Graphical User Interface (GUI). Fast typists will find that LostBUTFound can manage lost and found articles faster than traditional GUI applications.
+
 
 == Site Map
 
