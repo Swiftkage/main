@@ -619,7 +619,6 @@ A project often depends on third-party libraries. For example, article list depe
 a. Include those libraries in the repo (this bloats the repo size) +
 b. Require developers to download those libraries manually (this creates extra work for developers)
 
-//tag::user[]
 [appendix]
 == Product Scope
 
@@ -672,7 +671,6 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |=======================================================================
 
-
 [appendix]
 == Use Cases
 
@@ -696,7 +694,7 @@ Use case ends.
 ** 1b. System sends error message and command instruction to user.
 +
 Use case ends
-
+//tag::user[]
 [discrete]
 === Use Cases: Delete unresolved article
 *MSS*
@@ -817,6 +815,7 @@ Use case ends.
 +
 Use case ends
 
+//end::user[]
 [appendix]
 == Non Functional Requirements
 
@@ -830,7 +829,6 @@ Use case ends
 .  The user interface’s font and size should be legible by user.
 .  Should be able to retain information in event of crash or force shutdown.
 
-//end::user[]
 [appendix]
 == Glossary
 
